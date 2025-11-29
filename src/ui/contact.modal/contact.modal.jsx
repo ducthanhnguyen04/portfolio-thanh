@@ -2,7 +2,7 @@ import "./contact.modal.css";
 
 function ContactModal() {
     return (
-        <div>COntact</div>
+        <div>Chưa có thời gian code =))</div>
     )
 }
 export default ContactModal;
