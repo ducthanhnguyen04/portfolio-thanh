@@ -3,26 +3,12 @@ import "./work.modal.css";
 function WorkModal() {
   const experiences = [
     {
-      title: "Frontend Developer",
-      company: "TechVision",
-      time: "2023 - Present",
+      title: "Backend Developer",
+      company: "SmartCom Vietnam",
+      time: "2025/6 - 2025/9",
       description:
-        "Developed responsive UI using React, Tailwind, and optimized UX interactions.",
+        "Develop and maintain the company's online English learning system.",
     },
-    {
-      title: "Web Designer",
-      company: "Creative Studio",
-      time: "2021 - 2023",
-      description:
-        "Designed landing pages, branding assets, and improved conversion rate by 20%.",
-    },
-    {
-      title: "Intern Developer",
-      company: "SoftPlus",
-      time: "2020 - 2021",
-      description:
-        "Assisted in building internal dashboard tools and automated workflows.",
-    }
   ];
 
   return (

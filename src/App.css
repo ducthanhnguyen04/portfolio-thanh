@@ -29,7 +29,7 @@
 }
 
 .my_name {
-  color: tomato;
+  color: #7dd87d;
 }
 .greeting {
   width: 70%;
@@ -97,9 +97,6 @@
 
 
 
-
-
-
 .modal_overlay {
   position: fixed;
   inset: 0;
@@ -112,7 +109,7 @@
 }
 
 .modal_content {
-  background: #ffffff;
+  background: #1e1e1e;
   width: 90%;
   max-width: 550px;
   max-height: 60vh;
@@ -138,7 +135,7 @@
   margin-bottom: 15px;
   font-size: 26px;
   font-weight: 700;
-  color: #ff5b45;
+  color: #7dd87d;
   text-align: center;
 }
 
@@ -153,7 +150,7 @@
   position: absolute;
   top: 12px;
   right: 12px;
-  background: #ff5b45;
+  background: #7dd87d;
   border: none;
   color: white;
   width: 32px;
@@ -168,7 +165,7 @@
 }
 
 .close_btn:hover {
-  background: #d93e2c;
+  background: #7dd87d;
 }
 
 @keyframes fadeIn {

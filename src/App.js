@@ -9,18 +9,15 @@ import Cv from "../src/assets/images/cv.png";
 import Thanh from "../src/assets/images/thanh.png";
 import AboutModal from './ui/about.modal/about.modal';
 import WorkModal from './ui/work.modal/work.modal';
+import ProjectModal from './ui/project.modal/project.modal';
+import ContactModal from './ui/contact.modal/contact.modal';
+import SocialModal from './ui/social.modal/social.modal';
+
 
 function App() {
   const [isModalOpen, setIsModalOpen] = useState(false);
-  const [modalContent, setIsModalContent] = useState('');
   const [modalData, setModalData] = useState({ title: "", content: null });
 
-
-  const handleOpenModal = (content) => {
-    console.log("open")
-    setIsModalContent(content);
-    setIsModalOpen(true);
-  }
 
   const handleCloseModal = () => {
     setIsModalOpen(false);
@@ -48,15 +45,15 @@ function App() {
             <img src={Work} className='menu_item_icon'></img>
             <p className='menu_item_title'>Work</p>
           </div>
-          <div className='menu_item'>
+          <div className='menu_item' onClick={() => setModalData({ title: "My Project", content: <ProjectModal /> }) || setIsModalOpen(true)}>
             <img src={Project} className='menu_item_icon'></img>
             <p className='menu_item_title'>Project</p>
           </div>
-          <div className='menu_item'>
+          <div className='menu_item' onClick={() => setModalData({ title: "Social", content: <SocialModal /> }) || setIsModalOpen(true)}>
             <img src={Link} className='menu_item_icon'></img>
             <p className='menu_item_title'>Links</p>
           </div>
-          <div className='menu_item'>
+          <div className='menu_item' onClick={() => setModalData({ title: "Contact", content: <ContactModal /> }) || setIsModalOpen(true)}>
             <img src={Contact} className='menu_item_icon'></img>
             <p className='menu_item_title'>Contact</p>
           </div>
