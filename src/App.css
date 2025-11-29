@@ -62,7 +62,7 @@
   display: grid;
   place-items: center;
   cursor: pointer;
-  flex: 0 0 calc(33.33% -10px);
+  /* flex: 0 0 calc(33.33% -10px); */
 }
 .menu_item_icon {
   width: 60px;
