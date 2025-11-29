@@ -7,12 +7,14 @@ import Link from "../src/assets/images/http.png";
 import Contact from "../src/assets/images/contact.png";
 import Cv from "../src/assets/images/cv.png";
 import Thanh from "../src/assets/images/thanh.png";
-
-
+import AboutModal from './ui/about.modal/about.modal';
+import WorkModal from './ui/work.modal/work.modal';
 
 function App() {
   const [isModalOpen, setIsModalOpen] = useState(false);
   const [modalContent, setIsModalContent] = useState('');
+  const [modalData, setModalData] = useState({ title: "", content: null });
+
 
   const handleOpenModal = (content) => {
     console.log("open")
@@ -38,11 +40,11 @@ function App() {
         <hr className='hr'></hr>
         <div className='content'>
           <div className='menu'>
-          <div className='menu_item' onClick={() => handleOpenModal('About content')}>
+          <div className='menu_item' onClick={() => setModalData({ title: "About Me", content: <AboutModal /> }) || setIsModalOpen(true)}>
             <img src={About} className='menu_item_icon'></img>
             <p className='menu_item_title'>About</p>
           </div>
-          <div className='menu_item' onClick={() => handleOpenModal('Work content')}>
+          <div className='menu_item' onClick={() => setModalData({ title: "Work", content: <WorkModal /> }) || setIsModalOpen(true)}>
             <img src={Work} className='menu_item_icon'></img>
             <p className='menu_item_title'>Work</p>
           </div>
@@ -73,7 +75,10 @@ function App() {
       <div className="modal_overlay" onClick={handleCloseModal}>
           <div className="modal_content" onClick={(e) => e.stopPropagation()}>
             <button className="close_btn" onClick={handleCloseModal}>×</button>
-            <p>{modalContent}</p>
+            <h2>{modalData.title}</h2>
+            <div className='content_modal'>
+                {modalData.content}
+            </div>
           </div>
         </div>
      )}
