@@ -6,13 +6,12 @@
   height: 100vh; 
 }
 .wrapper {
-  display: flex;
+  /* display: flex; */
   position: relative;
   gap: 20px;
 }
 .container {
   max-width: 500px;
-  width: 100%;
   min-height: 500px;
   border: solid 3px #ccc;
   border-radius: 20px;
