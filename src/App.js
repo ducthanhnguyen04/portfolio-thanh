@@ -36,7 +36,7 @@ function App() {
         </div>
         <hr className='hr'></hr>
         <div className='content'>
-          <div className='menu'>
+          <div className='mainMenu'>
           <div className='menu_item' onClick={() => setModalData({ title: "About Me", content: <AboutModal /> }) || setIsModalOpen(true)}>
             <img src={About} className='menu_item_icon'></img>
             <p className='menu_item_title'>About</p>

@@ -49,12 +49,12 @@
   justify-content: center;
   margin-top: 30px;
 }
-.menu {
+.mainMenu {
   align-items: center;
-  justify-content: center;
+  justify-content: center !important;
   width: 70%;
-  display: flex;
-  flex-wrap: wrap;
+  display: flex !important;
+  flex-wrap: wrap !important;
   gap: 60px;
 }
 
