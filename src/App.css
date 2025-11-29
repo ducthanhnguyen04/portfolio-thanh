@@ -71,7 +71,9 @@
 
 .avatar {
   position: absolute; 
-  left: -200px; 
+  left: -150px; 
+  width: 340px;
+  height: 420px;
   bottom: -40px; 
   overflow: hidden;
   z-index: 10; 
